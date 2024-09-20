@@ -1,0 +1,70 @@
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.float_button {
+    background-color: blueviolet;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 50px 52px 54px -24px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.container_modal {
+    min-width: 300px;
+}
+
+.container_modal input, textarea{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    border: 1px solid #888;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 920px) {
+    .container_modal {
+        max-width: 600px;
+    }
+}
+
+
+.container_modal .row{
+    display: flex;
+    gap: 10px;
+
+}
+
+.container_modal textarea{
+    resize: none;
+    height: 100px;
+    padding: 10px;
+}
+
+.container_modal button{
+    border: 0;
+    padding: 6px 20px;
+    color: #ffff;
+    cursor: pointer;
+ 
+}
+
+.container_modal button:first-child {
+    background-color: darkslateblue;
+
+}
+
+.container_modal button:last-child {
+    background-color: rgb(231, 26, 12);
+
+}
