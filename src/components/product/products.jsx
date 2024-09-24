@@ -12,6 +12,7 @@ export default function Product({ hotel }) {
                         <span>{hotel.classificacao} ★</span>
                     </div>
                     <h3 className={styles.nome}>{hotel.nome}</h3>
+                    <p className={styles.localizacao}>{`${hotel.cidade}, ${hotel.estado}`}</p>
                     <div className={styles.espacoPreco}>
                         <span className={styles.preco}>Diária: R$ {hotel.preco}</span>
 

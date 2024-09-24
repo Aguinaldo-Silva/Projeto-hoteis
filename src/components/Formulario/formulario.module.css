@@ -1,39 +1,3 @@
-.content {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.details p:first-child {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.content img {
-    max-width: 18.75rem;
-    border-radius: 2rem;
-}
-
-.content .details p:nth-of-type(2) {
-    font-size: 0.75rem;
-    font-weight: 300;
-}
-
-.content .details p:nth-of-type(3) {
-    font-size: 1.75rem;
-    font-weight: bold;
-}
-
-.content .details p:nth-of-type(4) {
-    font-weight: 400;
-}
-
-.content .details p:nth-of-type(5) {
-    margin-top: 40px;
-    font-weight: 400;
-}
-
 .home {
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +19,7 @@
 }
 
 .container_modal {
-    min-width: 300px;
+    max-width: 18.75rem;
 }
 
 .container_modal input,
@@ -100,29 +64,12 @@ textarea {
     background-color: darkslateblue;
 
 }
-
-.container_modal button:last-child {
-    background-color: rgb(231, 26, 12);
+.container_modal .cancelar{
+    background-color: rgb(64, 95, 99);
 
 }
 
-@media (max-width:400px) {
-    .float_button {
-        position: relative;
-        top: 50px;
-        right: 5px;
-    }
-
-    .content img {
-        width: 100vw;
-        padding: 0;
-
-
-
-    }
-
-    .content {
-        padding: 1rem 1rem 1rem 0.2rem;
-    }
+.container_modal button:last-child {
+    background-color: rgb(231, 26, 12);
 
 }

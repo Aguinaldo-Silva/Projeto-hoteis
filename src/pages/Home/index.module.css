@@ -68,3 +68,31 @@
     background-color: rgb(231, 26, 12);
 
 }
+
+.pesquisa {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campoPesquisa {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.ordenacao {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.seletorOrdenacao {
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
