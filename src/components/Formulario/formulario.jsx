@@ -72,7 +72,13 @@ export default function HotelModal({ open, onClose, hotelData, onSave, onDelete 
                 <div className={styles.row}>
                     <input
                         value={formData.preco}
-                        onChange={(event) => setFormData({ ...formData, preco: event.target.value })}
+                        onChange={(event) => {
+                            const value = event.target.value;
+                            if (!isNaN(value) && value >= 0) {
+                                setFormData({ ...formData, preco: event.target.value })
+                            }
+                        }
+                        }
                         type="text"
                         placeholder='Valor da Diária'
                         className={errors.preco ? styles.erro : ""}
@@ -109,9 +115,15 @@ export default function HotelModal({ open, onClose, hotelData, onSave, onDelete 
 
                 <input
                     value={formData.classificacao}
-                    onChange={(event) => setFormData({ ...formData, classificacao: event.target.value })}
+                    onChange={(event) => {
+                        const value = event.target.value;
+                        if (!isNaN(value) && value >= 0 && value <= 5) {
+                            setFormData({ ...formData, classificacao: value })
+                        }
+                    }}
                     type="text"
-                    placeholder='Categoria'
+                    placeholder='Categoria: de 1 a 5'
+
                     className={errors.classificacao ? styles.erro : ""}
                 />
                 {errors.classificacao && <p className={styles.mensagemErro}>{errors.classificacao}</p>}
@@ -136,7 +148,7 @@ export default function HotelModal({ open, onClose, hotelData, onSave, onDelete 
                     )}
                 </div>
 
-                
+
             </div>
         </Modal>
     );
