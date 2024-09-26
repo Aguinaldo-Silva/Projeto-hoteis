@@ -27,12 +27,12 @@ export default function Header() {
                 <h1>Site de Hoteis</h1>
             </Link>
             <label className={styles.switch}>
-                <input
-                    type="checkbox"
-                    checked={isDarkMode}
-                    onChange={handleToggleTheme}
+                <button
+
+
+                    onClick={handleToggleTheme}
                     placeholder='alterar cor'
-                />
+                >DARKMODE</button>
                 <span className={styles.slider}></span>
             </label>
         </header>
